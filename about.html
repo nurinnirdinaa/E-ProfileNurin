@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - UiTM e-Profile</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) for smooth animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .card {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .icon-hover:hover {
+            color: #f0ad4e;
+            transition: color 0.3s ease;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Logo (Clickable) -->
+          <a href="index.html">
+            <img src="img/logo.png" alt="UiTM Logo" width="70px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profiles.html">Profiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                  <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="info.html">More Information</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+              <label class="form-check-label" for="darkModeToggle" id="themeLabel"> Dark Mode </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- About Content -->
+    <div class="container my-4" data-aos="fade-up">
+      <h2 class="text-center">About UiTM e-Profile</h2>
+
+      <!-- Accordion for Key Features -->
+      <div class="accordion my-4" id="featureAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is UiTM e-Profile?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#featureAccordion">
+            <div class="accordion-body">
+              The UiTM e-Profile system is designed to provide a comprehensive platform for UiTM students to showcase their academic achievements, projects, research work, and other extracurricular activities. It allows students to create and maintain an updated digital profile that highlights their academic journey and personal achievements throughout their time at the university.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Why was it created?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#featureAccordion">
+            <div class="accordion-body">
+              The system was created to help students manage and present their academic and professional portfolios. It allows students to easily share their profiles with potential employers, research institutions, or university administration. It also facilitates the tracking of students' academic progress and achievements in one central location.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Key Features Section -->
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card shadow p-3 mb-5 bg-body-tertiary border-0">
+            <div class="card-body">
+              <h5 class="card-title">Personalized Profiles</h5>
+              <p class="card-text">Students can add personal information, academic details, and achievements to their profile for easier management and sharing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow p-3 mb-5 bg-body-tertiary border-0">
+            <div class="card-body">
+              <h5 class="card-title">Project Showcases</h5>
+              <p class="card-text">Showcase research, projects, and academic work to give a comprehensive overview of student contributions to the field.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card shadow p-3 mb-5 bg-body-tertiary border-0">
+            <div class="card-body">
+              <h5 class="card-title">Secure Access</h5>
+              <p class="card-text">Only authorized users can access and update their profiles, ensuring the privacy and security of students’ personal data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision Section with Icon Hover Effect -->
+      <div class="row mt-5">
+        <div class="col-md-12" data-aos="fade-up">
+          <h4>Our Vision</h4>
+          <p>To empower UiTM students by providing them with a digital platform to manage and showcase their academic and professional journey. We aim to help students create a lasting impression with potential employers, researchers, and academics by giving them control over how their achievements are presented.</p>
+          <a href="#moreInfoModal" class="icon-hover" data-bs-toggle="modal" data-bs-target="#moreInfoModal">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-4 mt-auto">
+      <p>&copy; 2024 UiTM e-Profile. All Rights Reserved.</p>
+      <p>
+        <a href="privacy.html" class="text-white">Privacy Policy</a> 
+        
+      </p>
+    </footer>
+
+
+    <script>
+      // Dark Mode Toggle
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+        document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        localStorage.setItem("theme", theme);
+      }
+
+      document.getElementById("darkModeToggle").addEventListener("change", function (event) {
+        if (event.target.checked) {
+          setTheme("dark");
+        } else {
+          setTheme("");
+        }
+      });
+
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          setTheme(savedTheme);
+          if (savedTheme === "dark") {
+            document.getElementById("darkModeToggle").checked = true;
+          }
+        }
+      }
+
+
+    </script>
+    <!-- Bootstrap JS and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+  </body>
+</html>
